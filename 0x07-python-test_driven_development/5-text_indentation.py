@@ -3,9 +3,16 @@
 This is the "5-test_indentation" module.
 """
 
-
 def text_indentation(text):
-    """splits a text into lines along "?", ":", "." followed by 2 new lines"""
+    """splits a text into lines along "?", ":", "." followed by 2 new lines
+    Args:
+        text: input string
+    Returns:
+        No return
+    Raises:
+        TypeError: If text is not a string
+    """
+
     if type(text) is not str:
         raise TypeError("text must be a string")
     flag = 0
