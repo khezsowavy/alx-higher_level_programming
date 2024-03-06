@@ -29,6 +29,13 @@ def get_solution(board):
                 break
     return (solution)
 
+def board_deepcopy(board):
+    """
+    Return a deepcopy of a chessboard.
+    """
+    if isinstance(board, list):
+        return list(map(board_deepcopy, board))
+    return (board)
 
 def xout(board, row, col):
     """
