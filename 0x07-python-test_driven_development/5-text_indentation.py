@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """
-This is the "5-test_indentation" module.
+This module defines `text_indentation`
+The function prints a text with 2 new lines after each of
+these characters: ., ? and :
 """
+
 
 def text_indentation(text):
     """splits a text into lines along "?", ":", "." followed by 2 new lines
